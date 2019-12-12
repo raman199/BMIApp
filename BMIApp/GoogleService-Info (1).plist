@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>691547394585-7mh99r6hqd3flp9iv8jq8ihf1e3nvkqn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.691547394585-7mh99r6hqd3flp9iv8jq8ihf1e3nvkqn</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCFUFE21CJ7rYsk2swCZOBo_oDxtpatTKQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>691547394585</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ca.centennialcollege.BMIApp</string>
+	<key>PROJECT_ID</key>
+	<string>bmiapp1-d4e91</string>
+	<key>STORAGE_BUCKET</key>
+	<string>bmiapp1-d4e91.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:691547394585:ios:73abc7ad9bbb6bc478d088</string>
+	<key>DATABASE_URL</key>
+	<string>https://bmiapp1-d4e91.firebaseio.com</string>
+</dict>
+</plist>
