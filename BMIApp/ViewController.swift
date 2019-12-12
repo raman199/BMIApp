@@ -7,9 +7,15 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseFirestore
 
 class ViewController: UIViewController {
 
+    var dict = [String:AnyObject]()
+    
+    var db:Firestore?
+    
     private var bmiValue: Double = 0.0
     private var height1: Double = 0.0
     private var weight1: Double = 0.0
@@ -25,6 +31,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var name: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        db = Firestore.firestore()
+
         // Do any additional setup after loading the view.
     }
     
@@ -71,8 +79,27 @@ class ViewController: UIViewController {
         
         bmi.text = String(bmiValue)
         msg.text = result
+        let Id = db?.collection("bmi").document().documentID
+        
+        let parameters = ["name":name.text!,"age":age.text!,"gender":gender.text!,"weight":weight.text!,"height":height.text!,"date": Date(),"bmi": bmiValue,"Id":Id!] as [String : Any]
 
-
+        db?.collection("bmi").document(Id!).setData(parameters as [String : Any]){
+            err in
+            if let error = err{
+                print(error.localizedDescription)
+                
+            }else{
+                let alert = UIAlertController(title: "Message", message: "BMI added", preferredStyle: .alert)
+                let okay = UIAlertAction(title: "OK", style: .default, handler: { (action) in
+                    //       self.navigationController?.popViewController(animated: true)
+                })
+                alert.addAction(okay)
+                self.present(alert, animated: true, completion: nil)
+                
+            }
+            
+        }
+        
     }
 
 }
