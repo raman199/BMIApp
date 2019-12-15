@@ -4,7 +4,10 @@
 //
 //  Created by mac on 2019-12-11.
 //  Copyright © 2019 Centennial College. All rights reserved.
-//
+// File name   BmiViewController.swift
+//  Author's name   Ramandeep Kaur
+//  Student ID : 301088232
+//  Date 14 dec 2019
 
 import UIKit
 import Firebase
@@ -48,7 +51,7 @@ class BmiViewController: UIViewController,UITableViewDelegate,UITableViewDataSou
     
     // Row height of table cell
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
+        return 100
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -59,11 +62,11 @@ class BmiViewController: UIViewController,UITableViewDelegate,UITableViewDataSou
         
         // assigning name of task to table cell
         if let x = cell.viewWithTag(1) as? UILabel{
-            x.text = index["name"] as? String
+            x.text = index["weight"] as? String
         }
-        // assigning age of task to table cell
+        // assigning BMI of task to table cell
         if let y = cell.viewWithTag(2) as? UILabel{
-            y.text = index["age"] as? String
+            y.text = index["bmi"] as? String
         }
         
         return cell

@@ -4,7 +4,10 @@
 //
 //  Created by mac on 2019-12-11.
 //  Copyright © 2019 Centennial College. All rights reserved.
-//
+//  File name   ViewController.swift
+//  Author's name   Ramandeep Kaur
+//  Student ID : 301088232
+//  Date 14 dec 2019
 
 import UIKit
 import Firebase
@@ -29,6 +32,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var gender: UITextField!
     @IBOutlet weak var age: UITextField!
     @IBOutlet weak var name: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         db = Firestore.firestore()
@@ -38,10 +42,11 @@ class ViewController: UIViewController {
     
     @IBAction func calculate(_ sender: UIButton) {
         
-    
+       //converting text to double for calculation
         height1 = Double(height.text!) as! Double
         weight1 = Double(weight.text!) as! Double
 
+        // calculaing bmi
         bmiValue = weight1/(height1*height1)
         
         if(bmiValue < 16 )
@@ -83,6 +88,7 @@ class ViewController: UIViewController {
         
         let parameters = ["name":name.text!,"age":age.text!,"gender":gender.text!,"weight":weight.text!,"height":height.text!,"date": Date(),"bmi": bmiValue,"Id":Id!] as [String : Any]
 
+        // adding data to firebase
         db?.collection("bmi").document(Id!).setData(parameters as [String : Any]){
             err in
             if let error = err{

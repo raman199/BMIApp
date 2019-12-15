@@ -14,7 +14,6 @@
 		04E4BBC123A1B78F001DF173 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E4BBBF23A1B78F001DF173 /* LaunchScreen.storyboard */; };
 		04E4BBCB23A1B8F2001DF173 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04E4BBCA23A1B8F2001DF173 /* GoogleService-Info.plist */; };
 		04E4BBCF23A1D23C001DF173 /* BmiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4BBCE23A1D23C001DF173 /* BmiViewController.swift */; };
-		04E4BBD123A1E21A001DF173 /* cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4BBD023A1E21A001DF173 /* cell.swift */; };
 		3A9C91A99CDCE0CDB491AEA3 /* Pods_BMIApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4329E48578161CFC24F1D9 /* Pods_BMIApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +27,6 @@
 		04E4BBC223A1B78F001DF173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04E4BBCA23A1B8F2001DF173 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04E4BBCE23A1D23C001DF173 /* BmiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BmiViewController.swift; sourceTree = "<group>"; };
-		04E4BBD023A1E21A001DF173 /* cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cell.swift; sourceTree = "<group>"; };
 		1A4329E48578161CFC24F1D9 /* Pods_BMIApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BMIApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B46B2D36EF1A4DD4D06D8DF /* Pods-BMIApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMIApp.release.xcconfig"; path = "Target Support Files/Pods-BMIApp/Pods-BMIApp.release.xcconfig"; sourceTree = "<group>"; };
 		9CF70323348419A15BE686F6 /* Pods-BMIApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMIApp.debug.xcconfig"; path = "Target Support Files/Pods-BMIApp/Pods-BMIApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,7 +73,6 @@
 				04E4BBC223A1B78F001DF173 /* Info.plist */,
 				04E4BBCA23A1B8F2001DF173 /* GoogleService-Info.plist */,
 				04E4BBCE23A1D23C001DF173 /* BmiViewController.swift */,
-				04E4BBD023A1E21A001DF173 /* cell.swift */,
 			);
 			path = BMIApp;
 			sourceTree = "<group>";
@@ -214,7 +211,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				04E4BBCF23A1D23C001DF173 /* BmiViewController.swift in Sources */,
-				04E4BBD123A1E21A001DF173 /* cell.swift in Sources */,
 				04E4BBB923A1B78E001DF173 /* ViewController.swift in Sources */,
 				04E4BBB723A1B78E001DF173 /* AppDelegate.swift in Sources */,
 			);
